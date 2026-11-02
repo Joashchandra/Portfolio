@@ -7,7 +7,7 @@ export interface NavItem {
 export interface NavbarData {
   brand: {
     name: string;
-    logo?: string;
+    logo: string;
   };
   menuItems: NavItem[];
 }
