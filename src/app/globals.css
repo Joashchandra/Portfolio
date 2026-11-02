@@ -5,6 +5,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
+  --font-sans: var(--font-poppins), sans-serif;
+
   --text-display-3xl: 60px;
   --text-display-3xl--line-height: 72px;
   --text-display-2xl: 48px;
@@ -49,8 +51,8 @@
   --color-primary-300: #6600eb;
 
   --color-accent-red: #e5352d;
-  --color-accent-red: #177eff;
-  --color-accent-red: #ec1c96;
+  --color-accent-blue: #177eff;
+  --color-accent-pink: #ec1c96;
 
   --color-base-white: #ffffff;
   --color-base-black: #000000;
@@ -92,7 +94,6 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
   --font-mono: var(--font-geist-mono);
   --font-heading: var(--font-sans);
   --color-sidebar-ring: var(--sidebar-ring);
