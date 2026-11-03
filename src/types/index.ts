@@ -66,3 +66,22 @@ export interface SocialLink {
   src: string;
   alt: string;
 }
+
+export interface ComparisonItem {
+  id: string;
+  text: string;
+}
+
+export interface ComparisonData {
+  badge: string;
+  heading: string;
+  myColumn: {
+    title: string;
+    avatar: string;
+    traits: ComparisonItem[];
+  };
+  otherColumn: {
+    title: string;
+    traits: ComparisonItem[];
+  };
+}
