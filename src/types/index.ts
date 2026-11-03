@@ -36,3 +36,17 @@ export interface AboutMeData {
     };
   };
 }
+
+export interface SkillsetItem {
+  id: string;
+  name: string;
+  percentage: number;
+  description: string;
+  iconUrl?: string;
+}
+
+export interface SkillsetData {
+  badge: string;
+  heading: string;
+  skills: SkillsetItem[];
+}
