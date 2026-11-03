@@ -3,7 +3,7 @@ import type { NavbarData } from '@/types';
 export const navbarData: { navbar: NavbarData } = {
   navbar: {
     brand: {
-      name: 'Joash Chandra',
+      name: 'Edwin Anderson',
       logo: '/logo.svg',
     },
     menuItems: [
