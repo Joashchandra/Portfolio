@@ -6,6 +6,7 @@ import { Monitor, Layout, Briefcase } from 'lucide-react';
 import FolderIcon from '../../../public/folder.svg';
 import Image from 'next/image';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
+import SectionHeader from '../ui/SectionHeader';
 
 export default function AboutMe() {
   const { badge, heading, description, items, stats } = aboutMeData;
@@ -40,7 +41,7 @@ export default function AboutMe() {
   return (
     <section
       id='about'
-      className='flex flex-col w-full py-5xl px-xl gap-5xl scroll-mt-20 lg:flex-row lg:py-8xl xl:px-10xl xl:gap-7xl xl:scroll-mt-21.5'
+      className='flex flex-col w-full py-5xl px-xl gap-5xl scroll-mt-20 md:px-5xl lg:flex-row lg:py-8xl xl:px-10xl xl:gap-7xl xl:scroll-mt-21.5'
     >
       <motion.div
         initial={{ opacity: 0, x: -30 }}
@@ -88,24 +89,14 @@ export default function AboutMe() {
         className='flex flex-col gap-5xl'
       >
         <div className='flex flex-col gap-3xl'>
-          <div className='flex flex-col gap-lg'>
-            <div>
-              <span className='inline-flex items-center h-6 rounded-4xl border border-neutral-300 px-lg py-xxs gap-md text-xs text-neutral-700 xl:text-sm'>
-                {badge}
-              </span>
-            </div>
-
-            <h2 className='text-display-md font-bold text-neutral-950 xl:text-display-2xl'>
-              {heading}
-            </h2>
-          </div>
+          <SectionHeader badge={badge} heading={heading} />
 
           <p className='text-sm text-neutral-800 xl:text-md'>{description}</p>
         </div>
 
         <div className='flex flex-col items-center gap-3xl md:flex-row md:justify-between xl:gap-15.25'>
           <div className='flex items-center gap-3xl'>
-            <div className='flex w-39 lg:w-fit justify-center'>
+            <div className='flex w-39 md:w-fit justify-center'>
               <Image
                 src={FolderIcon}
                 alt='Projects completed icon'
