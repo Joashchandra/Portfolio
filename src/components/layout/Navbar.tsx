@@ -29,7 +29,7 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full h-20 lg:h-21.5 flex items-center justify-between px-xl lg:px-10xl z-50 transition-colors duration-300 ${
+      className={`fixed top-0 left-0 w-full h-20 lg:h-21.5 flex items-center justify-between px-xl xl:px-10xl z-50 transition-colors duration-300 ${
         isOpen || scrolled ? 'bg-white text-black' : 'bg-transparent text-white'
       }`}
     >
