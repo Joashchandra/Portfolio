@@ -50,3 +50,19 @@ export interface SkillsetData {
   heading: string;
   skills: SkillsetItem[];
 }
+
+export interface HeroData {
+  greeting: string;
+  name: string;
+  description: string;
+  profileImage: string;
+}
+
+export interface SocialLink {
+  id: string;
+  platform: string;
+  url: string;
+  iconType: 'dribbble' | 'instagram' | 'linkedin';
+  src: string;
+  alt: string;
+}
