@@ -85,3 +85,17 @@ export interface ComparisonData {
     traits: ComparisonItem[];
   };
 }
+
+export interface PortfolioItem {
+  id: string;
+  title: string;
+  image: string;
+  tags: string[];
+  link: string;
+}
+
+export interface PortfolioData {
+  badge: string;
+  heading: string;
+  projects: PortfolioItem[];
+}
