@@ -25,7 +25,7 @@ export const navbarData: { navbar: NavbarData } = {
       {
         id: 'projects',
         label: 'Projects',
-        path: '#projects',
+        path: '#portfolio',
       },
       {
         id: 'faq',
