@@ -115,3 +115,19 @@ export interface ExperienceData {
   heading: string;
   experiences: ExperienceItem[];
 }
+
+export interface TestimonialItem {
+  id: string;
+  companyName: string;
+  companyLogo?: string;
+  quote: string;
+  authorName: string;
+  authorRole: string;
+  authorAvatar: string;
+}
+
+export interface TestimonialData {
+  badge: string;
+  heading: string;
+  testimonials: TestimonialItem[];
+}
