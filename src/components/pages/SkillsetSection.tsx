@@ -3,9 +3,9 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import Image from 'next/image';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { skillset } from '@/data/skillsets';
 import SectionHeader from '../ui/SectionHeader';
+import Pagination from '../ui/Pagination';
 
 export default function SkillsetSection() {
   const { badge, heading, skills } = skillset;
@@ -161,33 +161,14 @@ export default function SkillsetSection() {
         </AnimatePresence>
 
         {showPagination && (
-          <div className='flex items-center justify-center gap-lg'>
-            <button
-              onClick={handlePrev}
-              disabled={isFirstPage}
-              className={`flex items-center justify-center w-12 h-12 p-sm gap-sm rounded-full border border-neutral-300 text-neutral-950 transition-colors shadow-xs ${
-                isFirstPage
-                  ? 'border-neutral-300 cursor-not-allowed'
-                  : 'border-primary-200 hover:text-primary-200 cursor-pointer'
-              }`}
-              aria-label='Previous skills'
-            >
-              <ChevronLeft className='w-4.5 h-4.5' />
-            </button>
-
-            <button
-              onClick={handleNext}
-              disabled={isLastPage}
-              className={`flex items-center justify-center w-12 h-12 p-sm gap-sm rounded-full border border-neutral-300 text-neutral-950 transition-colors shadow-xs ${
-                isLastPage
-                  ? 'border-neutral-300 cursor-not-allowed'
-                  : 'border-primary-200 hover:text-primary-200 cursor-pointer'
-              }`}
-              aria-label='Next skills'
-            >
-              <ChevronRight className='w-4.5 h-4.5' />
-            </button>
-          </div>
+          <Pagination
+            onPrev={handlePrev}
+            onNext={handleNext}
+            isFirst={isFirstPage}
+            isLast={isLastPage}
+            prevLabel='Previous skills'
+            nextLabel='Next skills'
+          />
         )}
       </div>
     </section>
