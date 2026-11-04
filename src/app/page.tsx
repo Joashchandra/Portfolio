@@ -1,5 +1,6 @@
 import AboutMe from '@/components/pages/AboutMe';
 import ComparisonSection from '@/components/pages/ComparisonSection';
+import ExperienceSection from '@/components/pages/ExperienceSection';
 import HeroSection from '@/components/pages/HeroSection';
 import PortfolioSection from '@/components/pages/PortfolioSection';
 import SkillsetSection from '@/components/pages/SkillsetSection';
@@ -13,6 +14,7 @@ export default function Home() {
         <SkillsetSection />
         <ComparisonSection />
         <PortfolioSection />
+        <ExperienceSection />
       </main>
     </div>
   );
