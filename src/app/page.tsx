@@ -1,6 +1,7 @@
 import AboutMe from '@/components/pages/AboutMe';
 import ComparisonSection from '@/components/pages/ComparisonSection';
 import HeroSection from '@/components/pages/HeroSection';
+import PortfolioSection from '@/components/pages/PortfolioSection';
 import SkillsetSection from '@/components/pages/SkillsetSection';
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
         <AboutMe />
         <SkillsetSection />
         <ComparisonSection />
+        <PortfolioSection />
       </main>
     </div>
   );
