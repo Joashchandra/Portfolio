@@ -1,4 +1,4 @@
-import AboutMe from '@/components/pages/AboutMe';
+import AboutMe from '@/components/pages/AboutMeSection';
 import ComparisonSection from '@/components/pages/ComparisonSection';
 import ExperienceSection from '@/components/pages/ExperienceSection';
 import HeroSection from '@/components/pages/HeroSection';
