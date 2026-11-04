@@ -99,3 +99,19 @@ export interface PortfolioData {
   heading: string;
   projects: PortfolioItem[];
 }
+
+export interface ExperienceItem {
+  id: string;
+  startYear: string;
+  endYear: string;
+  role: string;
+  company: string;
+  iconUrl?: string;
+  description: string;
+}
+
+export interface ExperienceData {
+  badge: string;
+  heading: string;
+  experiences: ExperienceItem[];
+}
