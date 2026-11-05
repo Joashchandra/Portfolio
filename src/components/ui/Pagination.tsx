@@ -23,7 +23,6 @@ export default function Pagination({
 }: PaginationProps) {
   return (
     <div className={`flex items-center justify-center gap-4 ${className}`}>
-      {/* Previous Button */}
       <button
         onClick={onPrev}
         disabled={isFirst}
@@ -37,7 +36,6 @@ export default function Pagination({
         <ArrowLeft className='w-4.5 h-4.5' />
       </button>
 
-      {/* Next Button */}
       <button
         onClick={onNext}
         disabled={isLast}

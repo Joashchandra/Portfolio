@@ -46,7 +46,6 @@ export default function AboutMe() {
       <motion.div
         initial={{ opacity: 0, x: -30 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
         className='flex flex-col w-full bg-primary-100 p-xl gap-lg rounded-2xl lg:max-w-101.25 xl:p-3xl xl:gap-xl'
       >
@@ -58,7 +57,6 @@ export default function AboutMe() {
               key={item.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
               transition={{ delay: index * 0.15, duration: 0.5 }}
               whileHover={{ scale: 1.01 }}
               className='flex items-center bg-white p-xl gap-xl rounded-2xl shadow-sm hover:shadow-md transition-shadow xl:p-3xl'
@@ -84,7 +82,6 @@ export default function AboutMe() {
       <motion.div
         initial={{ opacity: 0, x: 30 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
         className='flex flex-col gap-5xl'
       >

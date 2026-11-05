@@ -14,7 +14,6 @@ export default function PortfolioCard({ project }: PortfolioCardProps) {
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.6 }}
       whileHover={{ scale: 1.01 }}
       className='relative group w-full aspect-580/441 rounded-2xl cursor-pointer shrink-0 snap-center overflow-hidden'

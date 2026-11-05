@@ -65,7 +65,6 @@ export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
         </p>
       </div>
 
-      {/* Author Info dengan shadcn Avatar */}
       <div className='flex items-center gap-lg'>
         <Avatar className='w-15 h-15'>
           <AvatarImage

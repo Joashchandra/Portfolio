@@ -14,7 +14,6 @@ export default function ExperienceCard({ item, index }: ExperienceCardProps) {
     <motion.div
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.6, delay: index * 0.1, ease: 'easeOut' }}
       whileHover={{ y: -4 }}
       className='relative flex flex-col w-full rounded-xl bg-neutral-25 border border-neutral-300 overflow-hidden lg:flex-row lg:gap-xl'

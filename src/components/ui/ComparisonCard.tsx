@@ -24,7 +24,6 @@ export default function ComparisonCard({
     <motion.div
       initial={{ opacity: 0, x: initialX }}
       whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.7, ease: 'easeOut' }}
       className={`relative rounded-xl p-3xl gap-3xl flex flex-col justify-between overflow-hidden ${
         isPrimary
@@ -73,8 +72,7 @@ export default function ComparisonCard({
             key={trait.id}
             initial={{ opacity: 0, x: initialX }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ delay: index * 0.05, duration: 0.4 }}
+            transition={{ delay: index * 0.1, duration: 0.4 }}
             className={`flex items-center justify-center gap-lg text-md lg:text-lg ${
               isPrimary ? 'font-medium' : 'font-normal'
             }`}

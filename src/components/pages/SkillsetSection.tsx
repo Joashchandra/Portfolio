@@ -79,7 +79,7 @@ export default function SkillsetSection() {
           <motion.div
             key={`${safePage}-${itemsPerPage}`}
             initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -15 }}
             transition={{ duration: 0.35, ease: 'easeInOut' }}
             className='grid grid-cols-1 md:grid-cols-2 gap-xl'
@@ -95,7 +95,6 @@ export default function SkillsetSection() {
                   key={skill.id}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.3 }}
                   transition={{ delay: index * 0.05, duration: 0.4 }}
                   className='border border-neutral-300 rounded-xl p-xl gap-xl shadow-xs flex items-center hover:shadow-md transition-shadow lg:p-3xl lg:gap-3xl'
                 >
@@ -119,7 +118,6 @@ export default function SkillsetSection() {
                         strokeDasharray={circumference}
                         initial={{ strokeDashoffset: circumference }}
                         whileInView={{ strokeDashoffset: targetDashoffset }}
-                        viewport={{ once: true, amount: 0.5 }}
                         transition={{
                           duration: 1.2,
                           ease: 'easeInOut',
