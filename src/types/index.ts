@@ -131,3 +131,15 @@ export interface TestimonialData {
   heading: string;
   testimonials: TestimonialItem[];
 }
+
+export interface FaqItem {
+  id: string;
+  question: string;
+  answer: string;
+}
+
+export interface FaqData {
+  badge: string;
+  heading: string;
+  faqs: FaqItem[];
+}
