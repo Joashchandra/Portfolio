@@ -47,7 +47,7 @@ export default function Navbar() {
         ))}
       </nav>
 
-      <Button className='hidden lg:flex max-w-43'>
+      <Button href='#contact' className='hidden lg:flex max-w-43'>
         <Mail className='w-5 h-5' />
         Hire Me
       </Button>
