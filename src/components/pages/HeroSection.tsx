@@ -22,13 +22,14 @@ export default function HeroSection() {
       id='home'
       className='relative w-full min-h-screen bg-black text-white overflow-hidden snap-start'
     >
-      <div className='absolute bottom-0 left-0 right-0 w-full h-full pointer-events-none z-0 overflow-hidden'>
+      <div className='absolute bottom-0 left-0 right-0 w-full pointer-events-none z-0 overflow-hidden'>
         <Image
           src='/hero-background.svg'
           alt='Hero Background'
-          fill
+          width={1920}
+          height={1080}
           sizes='100vw'
-          className='object-contain object-bottom w-full h-full'
+          className='w-full h-auto object-bottom'
         />
       </div>
 
