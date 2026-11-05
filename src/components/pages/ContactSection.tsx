@@ -23,7 +23,7 @@ export default function ContactSection() {
       <div className='absolute w-full h-full flex items-end justify-center pointer-events-none z-0'>
         <div className='relative w-[80%] xl:w-1/3 h-full bottom-0'>
           <Image
-            src='/Pattern.svg'
+            src='/pattern.svg'
             alt='Pattern Left'
             fill
             className='object-contain mix-blend-multiply'
@@ -31,7 +31,7 @@ export default function ContactSection() {
         </div>
         <div className='relative w-[80%] xl:w-1/3 h-full'>
           <Image
-            src='/Pattern.svg'
+            src='/pattern.svg'
             alt='Pattern Right'
             fill
             className='object-contain mix-blend-multiply'
@@ -42,7 +42,7 @@ export default function ContactSection() {
       <div className='absolute bottom-0 left-0 right-0 w-full overflow-hidden leading-none z-5 pointer-events-none'>
         <div className='relative w-full h-40 lg:h-50'>
           <Image
-            src='/subtract.svg'
+            src='/Subtract.svg'
             alt='Subtract Bottom Overlay'
             fill
             className='object-cover object-top brightness-0'
