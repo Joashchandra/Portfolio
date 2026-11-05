@@ -99,7 +99,7 @@ export default function PortfolioSection() {
         <div className='hidden md:flex flex-col w-full gap-4xl'>
           <div
             ref={scrollContainerRef}
-            className='flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-none md:px-5xl xl:px-10xl pr-4'
+            className='flex gap-6 overflow-x-auto overflow-y-hidden snap-x snap-mandatory scrollbar-none md:px-5xl xl:px-10xl pr-4 touch-pan-x'
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
             {projects.map((project) => (
