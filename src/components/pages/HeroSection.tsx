@@ -62,7 +62,7 @@ export default function HeroSection() {
         initial={{ opacity: 0, scale: 0.95, y: 30 }}
         whileInView={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.3, ease: 'easeOut' }}
-        className='absolute top-1/2 md:top-[45%] lg:top-1/3 left-1/2 -translate-x-1/2 z-5 w-full md:w-[60%] lg:w-[55%] xl:w-[40%] 2xl:w-[35%] aspect-square'
+        className='absolute bottom-0 left-1/2 -translate-x-1/2 z-5 w-full md:w-[60%] lg:w-[55%] xl:w-[40%] 2xl:w-[35%] aspect-square'
       >
         <div className='relative w-full h-full'>
           <Image
