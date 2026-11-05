@@ -22,7 +22,15 @@ export default function HeroSection() {
       id='home'
       className='relative w-full min-h-screen bg-black text-white overflow-hidden snap-start'
     >
-      <div className='absolute inset-0 bg-[url("/hero-background.svg")] w-full h-full bg-cover bg-bottom pointer-events-none z-0' />
+      <div className='absolute bottom-0 left-0 right-0 w-full h-full pointer-events-none z-0 overflow-hidden'>
+        <Image
+          src='/hero-background.svg'
+          alt='Hero Background'
+          fill
+          sizes='100vw'
+          className='object-contain object-bottom w-full h-full'
+        />
+      </div>
 
       <div className='absolute top-34.25 lg:top-36.5 left-0 right-0 z-25 px-xl xl:px-10xl w-full flex flex-col lg:flex-row lg:justify-between gap-2xl'>
         <motion.div
