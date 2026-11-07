@@ -47,7 +47,7 @@ export default function ContactModal({
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
             transition={{ duration: 0.3, ease: 'easeOut' }}
-            className='relative flex flex-col items-center text-center w-full max-w-90.25 md:max-w-119.75 rounded-2xl p-3xl pt-8xl gap-3xl bg-white shadow-[0px_0px_24px_rgba(165,165,165,0.2)]'
+            className='relative flex flex-col items-center text-center w-full max-w-90.25 md:max-w-119.75 rounded-2xl p-3xl pt-8xl md:p-4xl md:pt-8xl gap-3xl bg-white shadow-[0px_0px_24px_rgba(165,165,165,0.2)]'
           >
             <div className='absolute -top-14 md:top-[-96px] left-1/2 -translate-x-1/2 w-28 h-28 md:w-40 md:h-40'>
               <Image
@@ -69,10 +69,7 @@ export default function ContactModal({
             </div>
 
             <div className='w-full flex justify-center'>
-              <Button
-                onClick={onAction}
-                className='flex flex-row justify-center items-center w-full h-12 rounded-full p-md gap-md bg-purple-gradient text-sm font-medium text-white cursor-pointer'
-              >
+              <Button onClick={onAction} className='w-full'>
                 {modalState === 'success' ? 'Back to Home' : 'Try Again'}
               </Button>
             </div>
